@@ -1,9 +1,9 @@
 class Library:
-    def _init_(self):
+    def __init__(self):
         self.file_name = "books.txt"
         self.file = open(self.file_name, "a+")
 
-    def _del_(self):
+    def __del__(self):
         self.file.close()
 
     def list_books(self):
